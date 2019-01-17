@@ -29,7 +29,6 @@ bot.on('message', message => {
         if(member.highestRole.calculatedPosition >= messange.membre.highestRole.calculatedPosition && message.author.id !== message.guild.ownerID) return message.channel.send("On ne mute pas l'unmutable")
         //Si le BOT a la permission de mute le membre
         if (member.highestRole.calculatedPosition >= message.guild.me.highestRole.calculatedPosition || member.id === message.guild.ownerID) return message.channel.send("I can't fdp")
-        //Set role
         let muterole = message.guild.roles.find(role => role.name === "Mute")
 
 })
